@@ -1,0 +1,2435 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>職場・人間関係のカサンドラ脱出｜30日セルフレスキュー・プログラム</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #F8F6F3;
+      --color-bg-warm: #FBF9F6;
+      --color-cream: #F5F0E8;
+      --color-blush: #E8D5C4;
+      --color-rose: #D4A5A5;
+      --color-rose-deep: #B88B8B;
+      --color-sage: #9CAF96;
+      --color-sage-deep: #7A9474;
+      --color-charcoal: #2C2C2C;
+      --color-text: #3D3D3D;
+      --color-text-soft: #5A5A5A;
+      --color-text-muted: #8A8A8A;
+      --color-white: #FFFFFF;
+      --color-glass: rgba(255, 255, 255, 0.7);
+      --color-glass-border: rgba(255, 255, 255, 0.4);
+      --gradient-warm: linear-gradient(135deg, #F5E6D8 0%, #E8D5C4 50%, #D4C4B0 100%);
+      --gradient-soft: linear-gradient(180deg, #FBF9F6 0%, #F5F0E8 100%);
+      --gradient-hero: linear-gradient(180deg, #FAF7F2 0%, #F0E8DC 40%, #E8DDD0 100%);
+      --font-display: 'Cormorant Garamond', 'Shippori Mincho', serif;
+      --font-body: 'Zen Kaku Gothic New', sans-serif;
+      --shadow-soft: 0 4px 30px rgba(0, 0, 0, 0.04);
+      --shadow-medium: 0 8px 40px rgba(0, 0, 0, 0.06);
+      --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.08);
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 32px;
+      --radius-xl: 48px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text);
+      background: var(--color-bg);
+      line-height: 2;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: var(--color-blush);
+      color: var(--color-charcoal);
+    }
+
+    /* === UTILITIES === */
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .container-wide {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .section {
+      padding: 120px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-label {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--color-rose-deep);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 500;
+      color: var(--color-charcoal);
+      line-height: 1.5;
+      margin-bottom: 24px;
+      letter-spacing: 0.02em;
+    }
+
+    .section-title em {
+      font-style: italic;
+      color: var(--color-rose-deep);
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      color: var(--color-text-soft);
+      line-height: 2.2;
+      max-width: 600px;
+    }
+
+    .text-center { text-align: center; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .relative { position: relative; }
+    .z-1 { z-index: 1; }
+
+    /* === DECORATIVE SHAPES === */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(60px);
+      opacity: 0.5;
+      pointer-events: none;
+    }
+
+    .blob-1 {
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, var(--color-rose) 0%, transparent 70%);
+    }
+
+    .blob-2 {
+      width: 350px;
+      height: 350px;
+      background: radial-gradient(circle, var(--color-sage) 0%, transparent 70%);
+    }
+
+    .blob-3 {
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, var(--color-blush) 0%, transparent 70%);
+    }
+
+    .organic-shape {
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .organic-shape svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Dot Pattern */
+    .dot-pattern {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-image: radial-gradient(var(--color-blush) 1.5px, transparent 1.5px);
+      background-size: 20px 20px;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    /* Line Pattern */
+    .line-pattern {
+      position: absolute;
+      pointer-events: none;
+      opacity: 0.15;
+    }
+
+    .line-pattern::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 200px;
+      background: linear-gradient(to bottom, transparent, var(--color-rose-deep), transparent);
+    }
+
+    /* Circle Outline */
+    .circle-outline {
+      position: absolute;
+      border: 1px solid var(--color-blush);
+      border-radius: 50%;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    /* Floating Elements */
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-20px) rotate(3deg); }
+    }
+
+    @keyframes floatReverse {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(20px) rotate(-3deg); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.1); opacity: 0.7; }
+    }
+
+    @keyframes drift {
+      0%, 100% { transform: translate(0, 0); }
+      25% { transform: translate(10px, -10px); }
+      50% { transform: translate(20px, 0); }
+      75% { transform: translate(10px, 10px); }
+    }
+
+    .float { animation: float 8s ease-in-out infinite; }
+    .float-reverse { animation: floatReverse 10s ease-in-out infinite; }
+    .pulse { animation: pulse 6s ease-in-out infinite; }
+    .drift { animation: drift 15s ease-in-out infinite; }
+
+    /* === BUTTONS === */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 18px 48px;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary {
+      background: var(--color-charcoal);
+      color: var(--color-white);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(44, 44, 44, 0.25);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--color-charcoal);
+      border: 1.5px solid var(--color-charcoal);
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-charcoal);
+      color: var(--color-white);
+    }
+
+    .btn-rose {
+      background: linear-gradient(135deg, var(--color-rose), var(--color-rose-deep));
+      color: var(--color-white);
+    }
+
+    .btn-rose:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(212, 165, 165, 0.4);
+    }
+
+    /* === GLASS CARD === */
+    .glass-card {
+      background: var(--color-glass);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid var(--color-glass-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-glass);
+    }
+
+    /* === HERO === */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--gradient-hero);
+      position: relative;
+      padding: 80px 24px;
+      overflow: hidden;
+    }
+
+    /* Hero Background Decorations */
+    .hero .blob-1 {
+      top: -10%;
+      right: -10%;
+      width: 600px;
+      height: 600px;
+      opacity: 0.3;
+      animation: pulse 10s ease-in-out infinite;
+    }
+
+    .hero .blob-2 {
+      bottom: -15%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      opacity: 0.25;
+      animation: pulse 12s ease-in-out infinite reverse;
+    }
+
+    .hero .dot-pattern {
+      top: 15%;
+      left: 5%;
+      opacity: 0.25;
+      animation: drift 20s ease-in-out infinite;
+    }
+
+    .hero .dot-pattern-2 {
+      bottom: 20%;
+      right: 8%;
+      width: 150px;
+      height: 150px;
+      opacity: 0.2;
+      animation: drift 25s ease-in-out infinite reverse;
+    }
+
+    .hero .circle-outline {
+      width: 300px;
+      height: 300px;
+      top: 20%;
+      right: 15%;
+      animation: float 15s ease-in-out infinite;
+    }
+
+    .hero .circle-outline-2 {
+      width: 200px;
+      height: 200px;
+      bottom: 25%;
+      left: 10%;
+      border-color: var(--color-sage);
+      animation: floatReverse 12s ease-in-out infinite;
+    }
+
+    .hero .organic-shape-1 {
+      top: 10%;
+      left: 8%;
+      width: 120px;
+      height: 120px;
+      opacity: 0.15;
+      animation: float 10s ease-in-out infinite;
+    }
+
+    .hero .organic-shape-2 {
+      bottom: 15%;
+      right: 12%;
+      width: 100px;
+      height: 100px;
+      opacity: 0.12;
+      animation: floatReverse 8s ease-in-out infinite;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 720px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 10px 28px;
+      background: var(--color-white);
+      border-radius: 100px;
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      color: var(--color-rose-deep);
+      margin-bottom: 40px;
+      box-shadow: var(--shadow-soft);
+      animation: fadeDown 0.8s ease-out;
+    }
+
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 7vw, 3.4rem);
+      font-weight: 500;
+      color: var(--color-charcoal);
+      line-height: 1.4;
+      margin-bottom: 32px;
+      animation: fadeUp 0.8s ease-out 0.1s both;
+    }
+
+    .hero-headline .highlight {
+      position: relative;
+      display: inline;
+    }
+
+    .hero-headline .highlight::after {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      right: 0;
+      height: 12px;
+      background: linear-gradient(90deg, rgba(212, 165, 165, 0.4), rgba(156, 175, 150, 0.3));
+      z-index: -1;
+      border-radius: 4px;
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: var(--color-text-soft);
+      line-height: 2.2;
+      margin-bottom: 48px;
+      animation: fadeUp 0.8s ease-out 0.2s both;
+    }
+
+    .hero-product {
+      background: var(--color-glass);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--color-glass-border);
+      border-radius: var(--radius-md);
+      padding: 32px 40px;
+      margin-bottom: 48px;
+      animation: fadeUp 0.8s ease-out 0.3s both;
+    }
+
+    .hero-product-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.3rem, 4vw, 1.6rem);
+      font-weight: 600;
+      color: var(--color-charcoal);
+      margin-bottom: 8px;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-product-sub {
+      font-size: 0.95rem;
+      color: var(--color-text-soft);
+    }
+
+    .hero-benefits {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 48px;
+      animation: fadeUp 0.8s ease-out 0.4s both;
+    }
+
+    .hero-benefit {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: var(--color-text);
+    }
+
+    .hero-benefit-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-sage), var(--color-sage-deep));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.7rem;
+      flex-shrink: 0;
+    }
+
+    .hero-cta {
+      animation: fadeUp 0.8s ease-out 0.5s both;
+    }
+
+    .hero-cta-text {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--color-text-soft);
+      margin-bottom: 24px;
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* === TESTIMONIALS === */
+    .testimonials {
+      background: var(--color-bg-warm);
+      position: relative;
+    }
+
+    .testimonials .blob-1 {
+      top: -20%;
+      left: -15%;
+      width: 400px;
+      height: 400px;
+      opacity: 0.2;
+    }
+
+    .testimonials .blob-2 {
+      bottom: -25%;
+      right: -10%;
+      width: 350px;
+      height: 350px;
+      opacity: 0.15;
+    }
+
+    .testimonials .line-pattern {
+      top: 10%;
+      right: 10%;
+      height: 300px;
+    }
+
+    .testimonials .line-pattern::before {
+      height: 300px;
+    }
+
+    .testimonials .line-pattern::after {
+      content: '';
+      position: absolute;
+      left: 40px;
+      width: 1px;
+      height: 200px;
+      background: linear-gradient(to bottom, transparent, var(--color-sage), transparent);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-top: 60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .testimonial-card {
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      padding: 40px 32px;
+      box-shadow: var(--shadow-soft);
+      transition: all 0.4s ease;
+      position: relative;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .testimonial-quote {
+      position: absolute;
+      top: 24px;
+      left: 28px;
+      font-family: var(--font-display);
+      font-size: 4rem;
+      color: var(--color-blush);
+      line-height: 1;
+      opacity: 0.6;
+    }
+
+    .testimonial-text {
+      font-size: 0.95rem;
+      line-height: 2;
+      color: var(--color-text);
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    .testimonial-author {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      padding-top: 16px;
+      border-top: 1px solid var(--color-cream);
+    }
+
+    /* === PROBLEM === */
+    .problem {
+      background: var(--gradient-soft);
+      position: relative;
+    }
+
+    .problem .blob-1 {
+      top: 10%;
+      right: -20%;
+      width: 500px;
+      height: 500px;
+      opacity: 0.15;
+      animation: drift 20s ease-in-out infinite;
+    }
+
+    .problem .blob-3 {
+      bottom: 20%;
+      left: -15%;
+      width: 400px;
+      height: 400px;
+      opacity: 0.12;
+      animation: drift 25s ease-in-out infinite reverse;
+    }
+
+    .problem .dot-pattern {
+      bottom: 10%;
+      right: 5%;
+      width: 180px;
+      height: 180px;
+      opacity: 0.2;
+    }
+
+    .problem .circle-outline {
+      width: 250px;
+      height: 250px;
+      top: 15%;
+      left: 5%;
+      opacity: 0.15;
+      animation: float 12s ease-in-out infinite;
+    }
+
+    .problem-content {
+      max-width: 680px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .problem-content p {
+      font-size: 1.05rem;
+      margin-bottom: 28px;
+      color: var(--color-text);
+    }
+
+    .problem-content strong {
+      color: var(--color-charcoal);
+      font-weight: 500;
+    }
+
+    .empathy-block {
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      padding: 40px;
+      margin: 40px 0;
+      position: relative;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .empathy-block::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: linear-gradient(to bottom, var(--color-rose), var(--color-sage));
+      border-radius: 4px 0 0 4px;
+    }
+
+    .empathy-block p {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--color-text-soft);
+      line-height: 2;
+      margin-bottom: 0;
+    }
+
+    .insight-box {
+      background: linear-gradient(135deg, rgba(156, 175, 150, 0.12), rgba(156, 175, 150, 0.05));
+      border-radius: var(--radius-md);
+      padding: 40px;
+      margin: 48px 0;
+      border: 1px solid rgba(156, 175, 150, 0.25);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .insight-box::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -30%;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, var(--color-sage) 0%, transparent 70%);
+      opacity: 0.15;
+    }
+
+    .insight-box-title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      color: var(--color-sage-deep);
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .story-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 48px;
+      margin: 48px 0;
+      box-shadow: var(--shadow-medium);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .story-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(circle at top right, var(--color-blush) 0%, transparent 70%);
+      opacity: 0.4;
+    }
+
+    .story-card-label {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      color: var(--color-rose-deep);
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .story-card-title {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: var(--color-charcoal);
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .story-card p {
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .story-card .quote {
+      font-family: var(--font-display);
+      font-style: italic;
+      color: var(--color-sage-deep);
+      font-size: 1.1rem;
+      padding-left: 20px;
+      border-left: 2px solid var(--color-sage);
+      margin: 24px 0;
+    }
+
+    /* === STATS === */
+    .stats {
+      background: var(--color-charcoal);
+      color: var(--color-white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stats::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(ellipse at 20% 20%, rgba(212, 165, 165, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 80%, rgba(156, 175, 150, 0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 60% 40%, rgba(232, 213, 196, 0.08) 0%, transparent 40%);
+    }
+
+    .stats .organic-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0.05;
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .stats .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .stats .section-label {
+      color: var(--color-rose);
+    }
+
+    .stats .section-title {
+      color: var(--color-white);
+    }
+
+    .stats .lead {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+      margin-top: 64px;
+    }
+
+    .stat-item {
+      text-align: center;
+      position: relative;
+    }
+
+    .stat-item::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
+    }
+
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 8vw, 4rem);
+      font-weight: 400;
+      color: var(--color-white);
+      line-height: 1.1;
+      margin-bottom: 8px;
+      position: relative;
+    }
+
+    .stat-number span {
+      color: var(--color-rose);
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.05em;
+      position: relative;
+    }
+
+    /* === PROGRAM === */
+    .program {
+      background: var(--color-bg-warm);
+      position: relative;
+    }
+
+    .program .blob-2 {
+      top: 5%;
+      right: -15%;
+      width: 450px;
+      height: 450px;
+      opacity: 0.12;
+      animation: pulse 15s ease-in-out infinite;
+    }
+
+    .program .blob-1 {
+      bottom: 10%;
+      left: -20%;
+      width: 400px;
+      height: 400px;
+      opacity: 0.1;
+      animation: pulse 18s ease-in-out infinite reverse;
+    }
+
+    .program .dot-pattern {
+      top: 20%;
+      left: 3%;
+      width: 120px;
+      height: 200px;
+      opacity: 0.15;
+    }
+
+    .program-timeline {
+      margin-top: 64px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .program-timeline::before {
+      content: '';
+      position: absolute;
+      left: 40px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--color-rose), var(--color-sage));
+    }
+
+    .timeline-item {
+      display: flex;
+      gap: 40px;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .timeline-marker {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: var(--color-white);
+      border: 2px solid var(--color-blush);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .timeline-marker span {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--color-rose-deep);
+    }
+
+    .timeline-content {
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      padding: 32px;
+      flex: 1;
+      box-shadow: var(--shadow-soft);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .timeline-content::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-rose), var(--color-sage));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .timeline-content:hover {
+      box-shadow: var(--shadow-medium);
+      transform: translateX(8px);
+    }
+
+    .timeline-content:hover::before {
+      opacity: 1;
+    }
+
+    .timeline-title {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--color-charcoal);
+      margin-bottom: 12px;
+    }
+
+    .timeline-desc {
+      font-size: 0.95rem;
+      color: var(--color-text-soft);
+      line-height: 1.9;
+    }
+
+    /* === FEATURES === */
+    .features {
+      background: var(--gradient-soft);
+      position: relative;
+    }
+
+    .features::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23D4A5A5' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+
+    .features .blob-1 {
+      top: -10%;
+      left: -10%;
+      width: 400px;
+      height: 400px;
+      opacity: 0.12;
+    }
+
+    .features .blob-2 {
+      bottom: -15%;
+      right: -10%;
+      width: 350px;
+      height: 350px;
+      opacity: 0.1;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 32px;
+      margin-top: 64px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .feature-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 48px 36px;
+      text-align: center;
+      box-shadow: var(--shadow-soft);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-rose), var(--color-sage));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .feature-card::after {
+      content: '';
+      position: absolute;
+      bottom: -50%;
+      right: -30%;
+      width: 200px;
+      height: 200px;
+      background: radial-gradient(circle, var(--color-blush) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-12px);
+      box-shadow: var(--shadow-medium);
+    }
+
+    .feature-card:hover::before {
+      opacity: 1;
+    }
+
+    .feature-card:hover::after {
+      opacity: 0.3;
+    }
+
+    .feature-icon {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 28px;
+      border-radius: var(--radius-md);
+      background: var(--gradient-warm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      position: relative;
+    }
+
+    .feature-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      color: var(--color-charcoal);
+      margin-bottom: 16px;
+      position: relative;
+    }
+
+    .feature-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-soft);
+      line-height: 1.9;
+      position: relative;
+    }
+
+    .feature-badge {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 6px 16px;
+      background: rgba(212, 165, 165, 0.15);
+      border-radius: 100px;
+      font-size: 0.75rem;
+      color: var(--color-rose-deep);
+      letter-spacing: 0.05em;
+      position: relative;
+    }
+
+    /* === BONUS === */
+    .bonus {
+      background: linear-gradient(135deg, #4A5568 0%, #2D3748 100%);
+      color: var(--color-white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bonus::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(ellipse at 10% 20%, rgba(212, 165, 165, 0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 90% 80%, rgba(156, 175, 150, 0.1) 0%, transparent 50%);
+    }
+
+    .bonus .grid-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+    }
+
+    .bonus .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .bonus .section-label {
+      color: var(--color-blush);
+    }
+
+    .bonus .section-title {
+      color: var(--color-white);
+    }
+
+    .bonus-grid {
+      display: grid;
+      gap: 24px;
+      margin-top: 64px;
+    }
+
+    .bonus-card {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      padding: 36px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bonus-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .bonus-card:hover {
+      background: rgba(255, 255, 255, 0.12);
+      transform: translateY(-4px);
+    }
+
+    .bonus-card:hover::before {
+      opacity: 1;
+    }
+
+    .bonus-number {
+      font-family: var(--font-display);
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      color: var(--color-rose);
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .bonus-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .bonus-desc {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.9;
+      position: relative;
+    }
+
+    .bonus-value {
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: var(--color-blush);
+      position: relative;
+    }
+
+    /* === GUARANTEE === */
+    .guarantee {
+      background: var(--color-bg-warm);
+      position: relative;
+    }
+
+    .guarantee .blob-1 {
+      top: -30%;
+      right: -20%;
+      width: 500px;
+      height: 500px;
+      opacity: 0.1;
+    }
+
+    .guarantee .circle-outline {
+      width: 300px;
+      height: 300px;
+      bottom: -10%;
+      left: 5%;
+      opacity: 0.12;
+    }
+
+    .guarantee-content {
+      display: flex;
+      align-items: center;
+      gap: 64px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .guarantee-badge {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: var(--color-white);
+      box-shadow: var(--shadow-medium);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .guarantee-badge::before {
+      content: '';
+      position: absolute;
+      inset: 8px;
+      border-radius: 50%;
+      border: 2px dashed var(--color-blush);
+    }
+
+    .guarantee-badge::after {
+      content: '';
+      position: absolute;
+      inset: -20px;
+      border-radius: 50%;
+      border: 1px solid rgba(212, 165, 165, 0.2);
+    }
+
+    .guarantee-badge-inner {
+      text-align: center;
+    }
+
+    .guarantee-badge-number {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: var(--color-charcoal);
+      line-height: 1;
+    }
+
+    .guarantee-badge-text {
+      font-size: 0.8rem;
+      color: var(--color-text-soft);
+      margin-top: 4px;
+    }
+
+    .guarantee-text {
+      flex: 1;
+    }
+
+    .guarantee-text p {
+      font-size: 1.05rem;
+      line-height: 2.2;
+      color: var(--color-text);
+      margin-bottom: 16px;
+    }
+
+    /* === PRICING === */
+    .pricing {
+      background: var(--gradient-soft);
+      position: relative;
+    }
+
+    .pricing::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(ellipse at 20% 30%, rgba(212, 165, 165, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 70%, rgba(156, 175, 150, 0.06) 0%, transparent 50%);
+    }
+
+    .pricing .dot-pattern {
+      top: 10%;
+      right: 5%;
+      width: 200px;
+      height: 200px;
+      opacity: 0.15;
+    }
+
+    .pricing .dot-pattern-2 {
+      bottom: 15%;
+      left: 3%;
+      width: 150px;
+      height: 150px;
+      opacity: 0.12;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 32px;
+      margin-top: 64px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pricing-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: 48px 40px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      transition: all 0.4s ease;
+      overflow: hidden;
+    }
+
+    .pricing-card::before {
+      content: '';
+      position: absolute;
+      top: -100%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, var(--color-blush) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .pricing-card:hover {
+      box-shadow: var(--shadow-medium);
+    }
+
+    .pricing-card:hover::before {
+      opacity: 0.1;
+    }
+
+    .pricing-card.featured {
+      border: 2px solid var(--color-rose);
+      transform: scale(1.02);
+    }
+
+    .pricing-card.featured:hover {
+      transform: scale(1.04);
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: -14px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, var(--color-rose), var(--color-rose-deep));
+      color: var(--color-white);
+      padding: 8px 24px;
+      border-radius: 100px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+    }
+
+    .pricing-plan {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      color: var(--color-text-soft);
+      margin-bottom: 8px;
+      letter-spacing: 0.05em;
+      position: relative;
+    }
+
+    .pricing-price {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 7vw, 3.2rem);
+      font-weight: 500;
+      color: var(--color-charcoal);
+      margin-bottom: 4px;
+      position: relative;
+    }
+
+    .pricing-price span {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--color-text-soft);
+    }
+
+    .pricing-note {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .pricing-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--color-cream), transparent);
+      margin: 32px 0;
+    }
+
+    .pricing-features {
+      list-style: none;
+      margin-bottom: 32px;
+      position: relative;
+    }
+
+    .pricing-features li {
+      padding: 12px 0;
+      font-size: 0.9rem;
+      color: var(--color-text);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .pricing-features li::before {
+      content: '✓';
+      color: var(--color-sage);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .pricing-features li.highlight {
+      color: var(--color-rose-deep);
+      font-weight: 500;
+    }
+
+    .pricing-features li.highlight::before {
+      color: var(--color-rose-deep);
+    }
+
+    .pricing-card .btn {
+      width: 100%;
+      position: relative;
+    }
+
+    /* === FAQ === */
+    .faq {
+      background: var(--color-bg-warm);
+      position: relative;
+    }
+
+    .faq .blob-2 {
+      top: -20%;
+      left: -15%;
+      width: 400px;
+      height: 400px;
+      opacity: 0.1;
+    }
+
+    .faq .circle-outline {
+      width: 200px;
+      height: 200px;
+      bottom: 10%;
+      right: 8%;
+      opacity: 0.15;
+    }
+
+    .faq-list {
+      margin-top: 64px;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .faq-item {
+      background: var(--color-white);
+      border-radius: var(--radius-md);
+      margin-bottom: 16px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .faq-item:hover {
+      box-shadow: var(--shadow-medium);
+    }
+
+    .faq-question {
+      padding: 24px 32px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      color: var(--color-charcoal);
+      transition: background 0.3s ease;
+    }
+
+    .faq-question:hover {
+      background: var(--color-cream);
+    }
+
+    .faq-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1.5px solid var(--color-blush);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-icon::before {
+      content: '+';
+      font-size: 1.2rem;
+      color: var(--color-rose-deep);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-icon {
+      background: var(--color-rose);
+      border-color: var(--color-rose);
+    }
+
+    .faq-item.active .faq-icon::before {
+      content: '−';
+      color: var(--color-white);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 400px;
+    }
+
+    .faq-answer-content {
+      padding: 0 32px 24px;
+      font-size: 0.95rem;
+      line-height: 2;
+      color: var(--color-text-soft);
+    }
+
+    /* === FINAL CTA === */
+    .final-cta {
+      background: linear-gradient(180deg, var(--color-charcoal) 0%, #1a1a1a 100%);
+      color: var(--color-white);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(ellipse at 50% 0%, rgba(212, 165, 165, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 30% 100%, rgba(156, 175, 150, 0.1) 0%, transparent 40%),
+        radial-gradient(ellipse at 70% 100%, rgba(232, 213, 196, 0.08) 0%, transparent 40%);
+    }
+
+    .final-cta .stars {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: 
+        radial-gradient(2px 2px at 20px 30px, rgba(255, 255, 255, 0.15), transparent),
+        radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.1), transparent),
+        radial-gradient(1px 1px at 90px 40px, rgba(255, 255, 255, 0.12), transparent),
+        radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.08), transparent),
+        radial-gradient(1px 1px at 160px 120px, rgba(255, 255, 255, 0.1), transparent);
+      background-size: 200px 200px;
+      animation: twinkle 5s ease-in-out infinite;
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    .final-cta .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .final-cta .section-title {
+      color: var(--color-white);
+    }
+
+    .final-cta-text {
+      font-size: 1.1rem;
+      line-height: 2.2;
+      color: rgba(255, 255, 255, 0.75);
+      max-width: 560px;
+      margin: 0 auto 48px;
+    }
+
+    .final-cta-text strong {
+      color: var(--color-white);
+    }
+
+    /* === PS === */
+    .ps {
+      background: var(--color-bg-warm);
+      border-top: 1px solid var(--color-cream);
+      position: relative;
+    }
+
+    .ps .blob-3 {
+      top: -30%;
+      right: -20%;
+      width: 400px;
+      height: 400px;
+      opacity: 0.08;
+    }
+
+    .ps-content {
+      max-width: 640px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ps-label {
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      letter-spacing: 0.2em;
+      color: var(--color-rose-deep);
+      margin-bottom: 24px;
+    }
+
+    .ps-text {
+      font-size: 1rem;
+      line-height: 2.2;
+      color: var(--color-text);
+    }
+
+    .ps-text p {
+      margin-bottom: 20px;
+    }
+
+    .ps-signature {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--color-text-soft);
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--color-cream);
+    }
+
+    /* === FOOTER === */
+    .footer {
+      background: var(--color-charcoal);
+      color: rgba(255, 255, 255, 0.5);
+      padding: 48px 24px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* === STICKY CTA === */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(16px);
+      padding: 16px 24px;
+      box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.08);
+      z-index: 1000;
+      display: none;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .sticky-cta.visible {
+      display: flex;
+    }
+
+    .sticky-cta .btn {
+      padding: 14px 32px;
+      font-size: 0.85rem;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 900px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .guarantee-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .guarantee-badge {
+        width: 160px;
+        height: 160px;
+      }
+
+      .guarantee-badge-number {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        padding: 80px 0;
+      }
+
+      .container, .container-wide {
+        padding: 0 20px;
+      }
+
+      .hero {
+        padding: 60px 20px;
+      }
+
+      .hero-product {
+        padding: 24px;
+      }
+
+      .program-timeline::before {
+        left: 28px;
+      }
+
+      .timeline-item {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .timeline-marker {
+        width: 56px;
+        height: 56px;
+      }
+
+      .timeline-content:hover {
+        transform: none;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pricing-card.featured {
+        transform: none;
+      }
+
+      .pricing-card.featured:hover {
+        transform: none;
+      }
+
+      .blob {
+        display: none;
+      }
+    }
+
+    /* === ANIMATIONS === */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <!-- Background Decorations -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="dot-pattern"></div>
+    <div class="dot-pattern dot-pattern-2"></div>
+    <div class="circle-outline"></div>
+    <div class="circle-outline circle-outline-2"></div>
+    <div class="organic-shape organic-shape-1">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="rgba(212, 165, 165, 0.3)" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,79.6,-45.8C87.4,-32.5,90,-16.3,88.5,-0.9C87,14.5,81.4,29,74.1,43.2C66.8,57.4,57.8,71.3,45,79.2C32.2,87.1,16.1,89,0.2,88.7C-15.8,88.3,-31.5,85.7,-44.9,78.1C-58.2,70.5,-69.1,57.9,-76.7,43.6C-84.3,29.3,-88.6,14.7,-89.2,-0.3C-89.8,-15.4,-86.7,-30.7,-79.1,-43.8C-71.5,-56.8,-59.4,-67.5,-45.4,-74.8C-31.4,-82.1,-15.7,-86,0.1,-86.2C15.9,-86.4,31.8,-82.9,44.7,-76.4Z" transform="translate(100 100)" />
+      </svg>
+    </div>
+    <div class="organic-shape organic-shape-2">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <path fill="rgba(156, 175, 150, 0.25)" d="M39.9,-65.1C52.5,-60.3,63.9,-51.2,71.4,-39.3C78.9,-27.4,82.5,-13.7,81.8,-0.4C81.1,12.9,76.1,25.7,68.9,37.3C61.7,48.9,52.3,59.1,40.7,66.7C29.1,74.3,14.6,79.2,0.1,79C-14.3,78.9,-28.6,73.7,-41.5,66.3C-54.4,58.9,-65.8,49.4,-72.6,37.3C-79.3,25.2,-81.4,10.6,-79.3,-3C-77.2,-16.6,-70.9,-29.2,-62.4,-39.6C-53.9,-50,-43.2,-58.2,-31.4,-63.4C-19.6,-68.7,-6.8,-71,4.5,-78.5C15.8,-85.9,31.6,-98.5,39.9,-65.1Z" transform="translate(100 100)" />
+      </svg>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-badge">SPECIAL PROGRAM</span>
+      <h1 class="hero-headline">
+        <span class="highlight">あなたの苦しみは、</span><br>
+        あなたのせいじゃない
+      </h1>
+      <p class="hero-sub">
+        職場の上司・部下・同僚、あるいは友人との関係に疲れ果て<br>
+        「私の伝え方が悪いんだ」と自分を責め続けてきたあなたへ
+      </p>
+      <div class="hero-product">
+        <p class="hero-product-title">職場・人間関係のカサンドラ脱出</p>
+        <p class="hero-product-sub">30日セルフレスキュー・プログラム</p>
+      </div>
+      <div class="hero-benefits">
+        <div class="hero-benefit">
+          <span class="hero-benefit-icon">✓</span>
+          <span>たった30日で「自分を責める思考」から解放される</span>
+        </div>
+        <div class="hero-benefit">
+          <span class="hero-benefit-icon">✓</span>
+          <span>ASD傾向のある相手との関係を根本から理解できる</span>
+        </div>
+        <div class="hero-benefit">
+          <span class="hero-benefit-icon">✓</span>
+          <span>同じ境遇の仲間と安心して繋がれる場所がある</span>
+        </div>
+      </div>
+      <div class="hero-cta">
+        <p class="hero-cta-text">もう一人で抱え込まなくていい</p>
+        <a href="#pricing" class="btn btn-primary">プログラム詳細を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials section">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="line-pattern"></div>
+    <div class="container-wide relative z-1">
+      <div class="text-center">
+        <span class="section-label">Testimonials</span>
+        <h2 class="section-title">実践された方々の声</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-in">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">
+            上司との関係で5年間苦しみました。何を報告しても無視されるか、突然怒られる。このプログラムで"職場カサンドラ"という概念を知り、やっと自分を責めるのをやめられました。
+          </p>
+          <p class="testimonial-author">34歳・女性・営業職</p>
+        </div>
+        <div class="testimonial-card fade-in">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">
+            20年来の親友なのに、なぜか話が通じない。私の言い方が悪いのかと悩み続けた日々。ASD特性を理解してから、関係性を見直すことができました。
+          </p>
+          <p class="testimonial-author">41歳・女性</p>
+        </div>
+        <div class="testimonial-card fade-in">
+          <span class="testimonial-quote">"</span>
+          <p class="testimonial-text">
+            部下の対応に悩み続けて鬱になりかけました。"発達障害の可能性"に気づいてから、接し方を変えることで状況が改善しました。
+          </p>
+          <p class="testimonial-author">48歳・男性・管理職</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="problem section">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-3"></div>
+    <div class="dot-pattern"></div>
+    <div class="circle-outline"></div>
+    <div class="container">
+      <span class="section-label">Your Pain</span>
+      <h2 class="section-title">
+        「私の伝え方が悪いんだ」と<br>
+        自分を責め続ける日々から<br>
+        <em>解放される方法</em>
+      </h2>
+
+      <div class="problem-content fade-in">
+        <p>職場の上司や部下、あるいは友人との会話で、何を言っても伝わらない虚しさを感じていませんか？</p>
+
+        <div class="empathy-block">
+          <p>
+            「もっと上手に説明すれば、きっとわかってくれるはず」<br>
+            「私のコミュニケーション能力が低いから、こうなるんだ」<br><br>
+            そう自分を責めながら、毎日出社するのが辛くなっていませんか？
+          </p>
+        </div>
+
+        <p>同僚に相談しても「そういう人いるよね」「気にしすぎじゃない？」と軽くあしらわれる。<br>
+        人事に相談しても「もう少し歩み寄りを」と言われるだけ。</p>
+
+        <p><strong>誰にもわかってもらえない孤独感。<br>
+        自分の感覚がおかしいのではないかという不安。</strong></p>
+
+        <p>夜、一人でスマホを握りしめながら「上司 話が通じない」「友人 なぜかわかってもらえない」と検索した経験はありませんか？</p>
+
+        <p>でも同時に、どこかホッとしませんでしたか？<br>
+        <strong>「私だけじゃなかったんだ」</strong>と。</p>
+      </div>
+
+      <div class="insight-box fade-in">
+        <h3 class="insight-box-title">「自分が悪い」という思い込みからの解放</h3>
+        <p style="line-height: 2; font-size: 0.95rem; color: var(--color-text-soft);">
+          私は10年以上、カサンドラ症候群に悩む方々のサポートを行ってきました。
+          これまで<strong style="color: var(--color-charcoal);">累計1,200名以上</strong>の方が、このプログラムを通じて心の平穏を取り戻しています。
+        </p>
+        <p style="line-height: 2; font-size: 0.95rem; color: var(--color-text-soft); margin-top: 16px;">
+          苦しんでいる方の多くが、ある共通の思い込みに囚われています。<br>
+          それは——<strong style="color: var(--color-charcoal);">「相手を変えなければ、状況は変わらない」</strong>という思い込みです。
+        </p>
+      </div>
+
+      <div class="problem-content fade-in">
+        <p>しかし、これは真実ではありません。ASDの特性は変わりません。上司や部下、友人を「普通の人」に変えることはできません。</p>
+        <p><strong>でも、あなた自身の「受け止め方」と「対処法」は変えられます。</strong><br>
+        そして、それだけで苦しみは大幅に軽減されるのです。</p>
+      </div>
+
+      <div class="story-card fade-in">
+        <p class="story-card-label">SUCCESS STORY</p>
+        <h3 class="story-card-title">Aさん（36歳・女性・事務職）のケース</h3>
+        <p style="color: var(--color-text-soft); line-height: 2;">
+          上司との関係で3年間苦しみました。何を報告しても"で？"の一言で終わり。自分の説明が下手なんだと、ビジネス書を読み漁りました。
+        </p>
+        <p class="quote">「自分のコミュニケーション能力が低いんだと、ずっと思っていました」</p>
+        <p style="color: var(--color-text-soft); line-height: 2;">
+          このプログラムで"ASD特性"を学んでから、上司の言動を客観視できるようになりました。
+        </p>
+        <p class="quote">「今は"そういう特性なんだ"と受け流せるようになり、ストレスが激減しています」</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats section">
+    <div class="organic-bg"></div>
+    <div class="container-wide">
+      <div class="text-center">
+        <span class="section-label">Results</span>
+        <h2 class="section-title">カサンドラ専門だからできる<br>根本的なアプローチ</h2>
+        <p class="lead mx-auto">
+          このプログラムは、一般的なコミュニケーション研修やカウンセリングとは根本的に異なります。
+        </p>
+      </div>
+      <div class="stats-grid fade-in">
+        <div class="stat-item">
+          <div class="stat-number">87<span>%</span></div>
+          <div class="stat-label">自己肯定感の回復を実感</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">78<span>%</span></div>
+          <div class="stat-label">相手への怒りが軽減</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">62<span>%</span></div>
+          <div class="stat-label">チームの雰囲気が改善</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">94.3<span>%</span></div>
+          <div class="stat-label">プログラム満足度</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program -->
+  <section class="program section">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="dot-pattern"></div>
+    <div class="container">
+      <div class="text-center relative z-1">
+        <span class="section-label">30 Days Journey</span>
+        <h2 class="section-title">30日間で変わる<br>回復のステップ</h2>
+      </div>
+      <div class="program-timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"><span>WEEK 1</span></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">自己認知の修正</h3>
+            <p class="timeline-desc">
+              「私が悪い」という思い込みからの解放。認知行動療法に基づいたワークで、自分を責める習慣のパターンを認識し、修正します。
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"><span>WEEK 2</span></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">ASD特性の深い理解</h3>
+            <p class="timeline-desc">
+              相手の言動を「悪意」ではなく「特性」として理解する。「なぜ伝わらないのか」「なぜ共感してくれないのか」が明確になります。
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"><span>WEEK 3</span></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">感情コントロールと対処法</h3>
+            <p class="timeline-desc">
+              ストレスを軽減する具体的なテクニック。感情ジャーナリングとグラウンディング技法で、相手の言動に振り回されなくなります。
+            </p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-marker"><span>WEEK 4</span></div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">新しい関係性の構築</h3>
+            <p class="timeline-desc">
+              適切な距離感と境界線の設定。バウンダリー設定とアサーティブネス・スキルで、健全な自己主張ができるようになります。
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features section">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="container-wide">
+      <div class="text-center relative z-1">
+        <span class="section-label">Program Contents</span>
+        <h2 class="section-title">プログラム内容</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon">📝</div>
+          <h3 class="feature-title">自己肯定感回復ワーク</h3>
+          <p class="feature-desc">
+            「私が悪い」という思い込みを科学的に検証し、修正するワークです。認知行動療法の手法に基づいて設計されています。
+          </p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🧠</div>
+          <h3 class="feature-title">ASD脳の理解講座</h3>
+          <p class="feature-desc">
+            ASD特性を深く理解するための動画講座です。「なぜ伝わらないのか」「なぜ共感してくれないのか」が明確になります。
+          </p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">💼</div>
+          <h3 class="feature-title">職場対処ガイド</h3>
+          <p class="feature-desc">
+            上司・部下・同僚別の具体的な対処法をまとめたガイドです。報告の仕方、指示の出し方、距離感の保ち方などを解説。
+          </p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">👥</div>
+          <h3 class="feature-title">友人関係対処ガイド</h3>
+          <p class="feature-desc">
+            友人・知人との関係に特化した対処法。期待値の調整方法、関係性を見直すタイミング、距離を置く決断の仕方を学びます。
+          </p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">🛡️</div>
+          <h3 class="feature-title">バウンダリー設定</h3>
+          <p class="feature-desc">
+            相手との適切な距離感と境界線を設定するトレーニングです。「NO」と言える自分になるための具体的な方法を学びます。
+          </p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">💬</div>
+          <h3 class="feature-title">グループQ&Aセッション</h3>
+          <p class="feature-desc">
+            月2回のオンラインセッションで、直接質問できる機会。他の受講者の質問からも学びが得られます。
+          </p>
+          <span class="feature-badge">プレミアムプラン限定</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bonus -->
+  <section class="bonus section">
+    <div class="grid-pattern"></div>
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Special Bonus</span>
+        <h2 class="section-title">三大特典</h2>
+      </div>
+      <div class="bonus-grid">
+        <div class="bonus-card fade-in">
+          <p class="bonus-number">BONUS 01</p>
+          <h3 class="bonus-title">緊急セルフケアキット</h3>
+          <p class="bonus-desc">
+            今日からすぐに使える即効性のあるセルフケア法。上司に理不尽なことを言われた時、友人に傷つくことを言われた時、すぐに実践できる呼吸法とグラウンディング技法を収録。
+          </p>
+          <p class="bonus-value">4,980円相当 → 無料</p>
+        </div>
+        <div class="bonus-card fade-in">
+          <p class="bonus-number">BONUS 02</p>
+          <h3 class="bonus-title">カサンドラ回復通信</h3>
+          <p class="bonus-desc">
+            全10回のメールマガジン。最新のASD研究情報、受講者の成功事例、実践的なワンポイントアドバイスをお届けします。
+          </p>
+        </div>
+        <div class="bonus-card fade-in">
+          <p class="bonus-number">BONUS 03</p>
+          <h3 class="bonus-title">カサンドラ回復コミュニティ</h3>
+          <p class="bonus-desc">
+            同じ境遇の仲間と安全に繋がれる審査制オンラインコミュニティ。職場カサンドラの苦しみは、周囲に理解されにくいもの。ここには同じ経験をした仲間がいます。
+          </p>
+          <p class="bonus-value">プレミアムプラン限定</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee -->
+  <section class="guarantee section">
+    <div class="blob blob-1"></div>
+    <div class="circle-outline"></div>
+    <div class="container">
+      <div class="guarantee-content fade-in">
+        <div class="guarantee-badge">
+          <div class="guarantee-badge-inner">
+            <p class="guarantee-badge-number">30</p>
+            <p class="guarantee-badge-text">日間返金保証</p>
+          </div>
+        </div>
+        <div class="guarantee-text">
+          <span class="section-label">Guarantee</span>
+          <h2 class="section-title">安心の返金保証</h2>
+          <p>
+            このプログラムには<strong>30日間の全額返金保証</strong>をお付けします。
+          </p>
+          <p>
+            30日以内であれば、理由を問わず全額をお返しします。「合わなかった」「思っていたのと違った」で全く問題ありません。
+          </p>
+          <p>
+            返金手続きも簡単で、メール1通でOKです。<br>
+            <strong>つまり、あなたにリスクはありません。</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing section" id="pricing">
+    <div class="dot-pattern"></div>
+    <div class="dot-pattern dot-pattern-2"></div>
+    <div class="container-wide">
+      <div class="text-center relative z-1">
+        <span class="section-label">Pricing</span>
+        <h2 class="section-title">料金プラン</h2>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card fade-in">
+          <p class="pricing-plan">Basic Plan</p>
+          <p class="pricing-price">¥19,800<span>（税込）</span></p>
+          <p class="pricing-note">1日あたり約660円</p>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li>全動画講座（4週間分・12本）</li>
+            <li>自己肯定感回復ワーク</li>
+            <li>ASD脳の理解講座</li>
+            <li>職場対処ガイド</li>
+            <li>友人関係対処ガイド</li>
+            <li>バウンダリー設定トレーニング</li>
+            <li>緊急セルフケアキット</li>
+            <li>カサンドラ回復通信・全10回</li>
+            <li>継続アップデート保証</li>
+            <li class="highlight">30日間全額返金保証</li>
+          </ul>
+          <a href="#" class="btn btn-secondary">ベーシックで申し込む</a>
+        </div>
+        <div class="pricing-card featured fade-in">
+          <span class="pricing-badge">RECOMMENDED</span>
+          <p class="pricing-plan">Premium Plan</p>
+          <p class="pricing-price">¥49,800<span>（税込）</span></p>
+          <p class="pricing-note">1日あたり約1,660円</p>
+          <div class="pricing-divider"></div>
+          <ul class="pricing-features">
+            <li>ベーシックプランの全内容</li>
+            <li class="highlight">グループQ&Aセッション（月2回・3ヶ月）</li>
+            <li class="highlight">メール相談（月3回・3ヶ月）</li>
+            <li class="highlight">専門家による個別フィードバック</li>
+            <li class="highlight">カサンドラ回復コミュニティ参加権</li>
+            <li class="highlight">30日間全額返金保証</li>
+          </ul>
+          <a href="#" class="btn btn-rose">プレミアムで申し込む</a>
+        </div>
+      </div>
+      <p class="text-center relative z-1" style="margin-top: 32px; font-size: 0.85rem; color: var(--color-text-muted);">
+        ※お支払いはクレジットカードまたは銀行振込
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq section">
+    <div class="blob blob-2"></div>
+    <div class="circle-outline"></div>
+    <div class="container">
+      <div class="text-center relative z-1">
+        <span class="section-label">FAQ</span>
+        <h2 class="section-title">よくあるご質問</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>夫婦関係ではなく、職場や友人関係でも効果がありますか？</span>
+            <span class="faq-icon"></span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              はい、このプログラムは職場・友人関係に特化して設計されています。上司、部下、同僚、友人、知人との関係すべてに対応しています。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>相手がASDの診断を受けていなくても受講できますか？</span>
+            <span class="faq-icon"></span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              はい、受講できます。診断の有無に関わらず、「話が通じにくい」「情緒的な繋がりが感じられない」という悩みを持つ方であれば、このプログラムは役立ちます。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>会社にバレずに受講できますか？</span>
+            <span class="faq-icon"></span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              はい、完全にプライベートで受講できます。オンラインで完結するため、通院の必要もありません。決済明細には「オンライン教材」と表示されます。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>転職を考えていますが、それでも受講する意味はありますか？</span>
+            <span class="faq-icon"></span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              はい、大いに意味があります。転職しても、次の職場で同じ状況に遭遇する可能性があります。ASD特性への理解と対処法を身につけておくことで、どんな環境でも対応できるようになります。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>管理職として部下への接し方を学びたいのですが、対応していますか？</span>
+            <span class="faq-icon"></span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              はい、対応しています。「部下がASD傾向の場合」の具体的な対処法をまとめたガイドが含まれています。指示の出し方、報連相を促す仕組み作り、感情的にならない接し方などを学べます。
+            </div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            <span>返金保証は本当に使えますか？</span>
+            <span class="faq-icon"></span>
+          </div>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              はい、本当に使えます。30日以内であれば、理由を問わず全額をお返しします。「合わなかった」「思っていたのと違った」で全く問題ありません。返金手続きも簡単で、メール1通でOKです。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="final-cta section">
+    <div class="stars"></div>
+    <div class="container">
+      <span class="section-label" style="color: var(--color-rose);">Start Your Journey</span>
+      <h2 class="section-title">
+        回復への地図は用意しました<br>
+        あとはあなたの決断だけです
+      </h2>
+      <p class="final-cta-text">
+        もし、今あなたが苦しんでいるなら、<br>
+        どうか一人で抱え込まないでください。<br><br>
+        <strong>あなたは、一人じゃありません。</strong><br><br>
+        同じ苦しみを経験し、そこから回復した人がたくさんいます。<br>
+        あなたも、必ず回復できます。
+      </p>
+      <a href="#pricing" class="btn btn-rose" style="padding: 22px 56px; font-size: 1rem;">今すぐプログラムに申し込む</a>
+    </div>
+  </section>
+
+  <!-- PS -->
+  <section class="ps section">
+    <div class="blob blob-3"></div>
+    <div class="container">
+      <div class="ps-content fade-in">
+        <p class="ps-label">P.S.</p>
+        <div class="ps-text">
+          <p>最後まで読んでいただき、本当にありがとうございます。</p>
+          
+          <p>私自身、かつて「職場カサンドラ」の当事者でした。</p>
+
+          <p>毎朝、会社に行くのが怖かった。「自分が悪い」と責め続けた。誰にもわかってもらえなかった。</p>
+
+          <p>だからこそ、<strong>同じ苦しみを抱えている方の力になりたい</strong>と思いました。</p>
+
+          <p>このプログラムは、私の10年以上の経験と、1,200名以上の方をサポートしてきた知見の集大成です。</p>
+
+          <p><strong>30日間の返金保証</strong>があるので、リスクはありません。<br>
+          まずは試してみてください。</p>
+
+          <p>あなたの回復を、心から応援しています。</p>
+        </div>
+        <p class="ps-signature">カサンドラ専門カウンセラー</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      職場・人間関係のカサンドラ脱出｜30日セルフレスキュー・プログラム<br>
+      © 2024 All Rights Reserved.
+    </p>
+  </footer>
+
+  <!-- Sticky CTA -->
+  <div class="sticky-cta" id="stickyCta">
+    <a href="#pricing" class="btn btn-secondary">Basic ¥19,800</a>
+    <a href="#pricing" class="btn btn-rose">Premium ¥49,800</a>
+  </div>
+
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      });
+    });
+
+    // Sticky CTA
+    const stickyCta = document.getElementById('stickyCta');
+    const hero = document.querySelector('.hero');
+    const pricing = document.getElementById('pricing');
+
+    function checkSticky() {
+      const heroBottom = hero.getBoundingClientRect().bottom;
+      const pricingTop = pricing.getBoundingClientRect().top;
+      if (heroBottom < 0 && pricingTop > window.innerHeight) {
+        stickyCta.classList.add('visible');
+      } else {
+        stickyCta.classList.remove('visible');
+      }
+    }
+
+    window.addEventListener('scroll', checkSticky);
+    checkSticky();
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Fade in animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
